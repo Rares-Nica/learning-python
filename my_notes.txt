@@ -1,0 +1,3 @@
+Day 1: Learned about lists and loops
+Day 2: Learned about dictionaries and functions
+Day 3: Learned about error handling and files

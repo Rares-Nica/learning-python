@@ -1,0 +1,10 @@
+{
+    "model_name": "my_local_ai",
+    "base_model": "llama3",
+    "learning_rate": 0.001,
+    "epochs": 10,
+    "parameters": [
+        "LoRA",
+        "quantization"
+    ]
+}
