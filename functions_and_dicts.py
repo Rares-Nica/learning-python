@@ -16,20 +16,19 @@ print(person)
 # Looping through a dictionary
 print("\n--- dict items ---")
 for key, value in person.items():
-    print(f"{key}: {value}")
+    print(f"{key}: {value}")    # only this line is indented
 
-    # Functions in Python - cleaner than C++
-    def greet(name, age=18):  # age has a default value
-        return f"Hello {name}, you are {age} years old."
-    
-    print ("'\n--- functions ---")
-    print(greet("Rares", 19))
-    print(greet("Someone")) # uses default age
+# Everything below has zero indentation — outside the loop
+def greet(name, age=18):
+    return f"Hello {name}, you are {age} years old."
 
-    # Functions can return multiple values - impossible in C++ withhout structs
-    def get_stats(numbers):
-        return min(numbers), max(numbers), sum(numbers) / len(numbers)
-    
-    scores = [85, 92, 78, 95, 88]
-    minimum, maximum, average = get_stats(scores)
-    print(f"\nMin: {minimum}, Max: {maximum}, Average: {average}")
+print("\n--- functions ---")
+print(greet("Rares", 19))
+print(greet("Someone"))
+
+def get_stats(numbers):
+    return min(numbers), max(numbers), sum(numbers) / len(numbers)
+
+scores = [85, 92, 78, 95, 88]
+minimum, maximum, average = get_stats(scores)
+print(f"\nMin: {minimum}, Max: {maximum}, Average: {average}")
